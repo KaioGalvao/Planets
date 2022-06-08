@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Spicy+Rice&display=swap');
+
+
+*
+{
+    margin: 0;
+    border: auto;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body
+{   
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p3/1995303-espaco-paisagem-com-grandes-planetas-no-ceu-estrelado-roxo-e-cidade-no-horizonte-ilustracao-natureza-em-outro-planeta-vetor.jpg');
+    
+}
+
+header
+{   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+.logo h1
+{
+    font-family: 'Spicy Rice', cursive;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.logo img
+{
+    object-fit: cover;
+    object-position: center;
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.nav-links
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    gap: 50px;
+    margin-right: 150px;
+
+}
+
+.link a
+{
+    color: white;
+    padding: 8px 24px;
+    transition: .5s ease;
+    border-radius: 24px;
+}
+
+#active
+{
+    background: #4c264b;
+    color: #d2a391;
+}
+
+.link a:hover
+{   
+    color: #d2a391;
+    background: #4c264b;
+}
+
+
+
+
+.container
+{   
+    height: 600px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.container div
+{   
+    
+    background: #4c264b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.terra{
+    transition: .9s ease;
+}
+
+.terra img{
+    transition: .5s ease;
+}
+
+.terra:hover{
+    content: 'Esse é o planeta terra';
+    height: 500px;
+    border-radius: 20px;
+}
+.terra img:hover{
+    margin-top: -100px;
+}
+
+.netuno{
+    transition: .9s ease;
+}
+
+.netuno img{
+    transition: .5s ease;
+}
+
+.netuno:hover{
+    content: 'Esse é o planeta terra';
+    height: 500px;
+    border-radius: 20px;
+}
+.netuno img:hover{
+    margin-top: -100px;
+}
+
+
+.jupiter{
+    transition: .9s ease;
+}
+
+.jupiter img{
+    transition: .5s ease;
+}
+
+.jupiter:hover{
+    content: 'Esse é o planeta terra';
+    height: 500px;
+    border-radius: 20px;
+}
+.jupiter img:hover{
+    margin-top: -100px;
+}
+
+
+.marte{
+    transition: .9s ease;
+}
+
+.marte img{
+    transition: .5s ease;
+}
+
+.marte:hover{
+    content: 'Esse é o planeta terra';
+    height: 500px;
+    border-radius: 20px;
+}
+.marte img:hover{
+    margin-top: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    background: #4c264b;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+footer p{
+    margin-right: 150px;
+}
+
+footer a{
+    color: #d2a391;
+    font-weight: bold;
+}
