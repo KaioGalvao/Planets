@@ -7,6 +7,7 @@
     border: auto;
     text-decoration: none;
     list-style: none;
+    overflow: hidden;
 
 }
 
@@ -63,7 +64,7 @@ header
 .link a
 {
     color: white;
-    padding: 8px 24px;
+    padding: 12px 24px;
     transition: .5s ease;
     border-radius: 24px;
 }
@@ -80,11 +81,9 @@ header
     background: #4c264b;
 }
 
-
-
-
 .container
 {   
+    position: relative;
     height: 600px;
     margin-top: 20px;
     display: flex;
@@ -92,98 +91,53 @@ header
     align-items: center;
     transition: .5s ease;
 }
-
-.container div
+.container > div
 {   
-    
+    position: relative;
+    z-index: 5;
     background: #4c264b;
     border-radius: 50%;
     display: flex;
     align-items: center;
-
-}
-
-
-
-.terra{
-    transition: .9s ease;
-}
-
-.terra img{
+    flex-direction: column;
     transition: .5s ease;
+    justify-content: center;
 }
 
-.terra:hover{
-    content: 'Esse é o planeta terra';
-    height: 500px;
-    border-radius: 20px;
-}
-.terra img:hover{
-    margin-top: -100px;
+.container > div:hover
+{   
+    height: 600px;
+    border-radius: 20px;   
 }
 
-.netuno{
-    transition: .9s ease;
+
+.container > div h3
+{   
+    color: white;
+    font-family: 'Spicy Rice', cursive;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 5px;
+    transition: .4s ease;
+    padding: 50px;
+    margin-top: -150px;
 }
 
-.netuno img{
+.container > img
+{   
+   
+
+    animation: rotate 10s linear infinite;
     transition: .5s ease;
+    
 }
 
-.netuno:hover{
-    content: 'Esse é o planeta terra';
-    height: 500px;
-    border-radius: 20px;
+.container > div img:hover
+{   
+    animation: rotate 10s linear infinite;
+    margin-top: -70px;
+    
 }
-.netuno img:hover{
-    margin-top: -100px;
-}
-
-
-.jupiter{
-    transition: .9s ease;
-}
-
-.jupiter img{
-    transition: .5s ease;
-}
-
-.jupiter:hover{
-    content: 'Esse é o planeta terra';
-    height: 500px;
-    border-radius: 20px;
-}
-.jupiter img:hover{
-    margin-top: -100px;
-}
-
-
-.marte{
-    transition: .9s ease;
-}
-
-.marte img{
-    transition: .5s ease;
-}
-
-.marte:hover{
-    content: 'Esse é o planeta terra';
-    height: 500px;
-    border-radius: 20px;
-}
-.marte img:hover{
-    margin-top: -100px;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 footer{
@@ -210,4 +164,14 @@ footer p{
 footer a{
     color: #d2a391;
     font-weight: bold;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
