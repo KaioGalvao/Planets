@@ -125,18 +125,33 @@ header
 
 .container > img
 {   
-   
-
     animation: rotate 10s linear infinite;
     transition: .5s ease;
     
 }
 
-.container > div img:hover
+.planet{
+    transition: .4s ease;
+}
+
+.planet p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+    margin-top: -38px;
+}
+
+.planet:hover  img
 {   
+    margin-top: -50px;
     animation: rotate 10s linear infinite;
-    margin-top: -70px;
-    
+}
+
+.planet:hover  p{
+    opacity: 1;
+    margin-top: 15px;
 }
 
 
